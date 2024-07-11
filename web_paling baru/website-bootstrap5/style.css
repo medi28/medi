@@ -1,0 +1,89 @@
+.navbar-brand img {
+  height: 1.5rem; /* Tinggi gambar disamakan dengan ukuran font */
+  margin-right: 10px; /* Jarak antara gambar dan teks */
+  vertical-align: middle; /* Menyelaraskan gambar dengan teks */
+}
+
+.banner {
+  background: url("img/foto.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding-top: 23%;
+  padding-bottom: 20%;
+  color: #fff;
+}
+
+/* galeri */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+/* galeri */
+
+/* css visi-misi */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #17a2b8;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.lead {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #555;
+}
+
+.list-unstyled li {
+  font-size: 1.1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #e9ecef;
+  list-style: none;
+  position: relative;
+  padding-left: 40px;
+}
+
+.list-unstyled li:last-child {
+  border-bottom: none;
+}
+
+.list-unstyled li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #17a2b8;
+}
+/* css visi-misi */
+
+/* css jurusan */
+.carousel-item img {
+  max-height: 500px; /* Sesuaikan tinggi sesuai kebutuhan */
+  max-width: 90%; /* Sesuaikan lebar sesuai kebutuhan */
+  margin: 0 auto; /* Untuk menempatkan gambar di tengah */
+  object-fit: cover;
+  box-shadow: 3 4px 8px rgba(254, 1, 1, 0.2); /* Menambahkan bayangan */
+  border-radius: 10px; /* Menambahkan sedikit pembulatan pada sudut gambar */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: white; /* Mengubah warna teks menjadi putih */
+}
+/* css jurusan  */
+
